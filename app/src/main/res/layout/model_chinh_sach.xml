@@ -12,7 +12,6 @@
         android:id="@+id/nameChinhSach"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
         android:text="nameStory"
         android:textSize="20sp"
         android:layout_marginHorizontal="15dp"
