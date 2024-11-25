@@ -8,7 +8,7 @@
     tools:context=".Activity.Account">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pink"
@@ -20,13 +20,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgBack"
+            android:id="@+id/imgAcountBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/back" />
 
         <TextView
-            android:id="@+id/txtBack"
+            android:id="@+id/txtAccountBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="15dp"
@@ -44,15 +44,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAccount">
 
         <TextView
             android:id="@+id/txtSuaHoSo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="10dp"
-            android:textColor="@color/pink"
+            android:background="@drawable/circle_white_bg"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
             android:text="CHỈNH SỬA THÔNG TIN CÁ NHÂN"
             android:textSize="22sp"
             android:textStyle="bold" />

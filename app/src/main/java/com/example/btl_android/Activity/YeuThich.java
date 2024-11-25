@@ -1,6 +1,5 @@
 package com.example.btl_android.Activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -12,32 +11,21 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.btl_android.R;
 
-public class MainActivity extends AppCompatActivity {
-    ImageView imgTKNext, imgChinhSach, imgYTNext;
+public class YeuThich extends AppCompatActivity {
+    ImageView imgYeuThichBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_yeu_thich);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        imgTKNext = findViewById(R.id.imgTKNext);
-        imgChinhSach = findViewById(R.id.imgCSNext);
-        imgYTNext = findViewById(R.id.imgYTNext);
-        imgTKNext.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Account.class);
-            startActivity(intent);
-        });
-        imgChinhSach.setOnClickListener(v -> {
-            Intent intent = new Intent(this, ChinhSach.class);
-            startActivity(intent);
-        });
-        imgYTNext.setOnClickListener(v -> {
-            Intent intent = new Intent(this, YeuThich.class);
-            startActivity(intent);
+        imgYeuThichBack = findViewById(R.id.imgYeuThichBack);
+        imgYeuThichBack.setOnClickListener(v -> {
+            finish();
         });
     }
 }

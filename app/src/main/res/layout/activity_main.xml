@@ -189,13 +189,13 @@
             android:paddingVertical="10dp">
 
             <ImageView
-                android:id="@+id/imgDanhGia"
+                android:id="@+id/imgYeuThich"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/favorite" />
 
             <TextView
-                android:id="@+id/txtDanhGia"
+                android:id="@+id/txtYeuThich"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -206,7 +206,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imgDGNext"
+                android:id="@+id/imgYTNext"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="15dp"

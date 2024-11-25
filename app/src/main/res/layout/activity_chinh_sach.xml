@@ -21,13 +21,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgBack"
+            android:id="@+id/imgCSBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/back" />
 
         <TextView
-            android:id="@+id/txtBack"
+            android:id="@+id/txtCSBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="15dp"

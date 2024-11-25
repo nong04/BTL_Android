@@ -14,7 +14,7 @@ import com.example.btl_android.R;
 
 public class Account extends AppCompatActivity {
     Button btnDoiLuu, btnDoiHuy;
-    ImageView imgBack;
+    ImageView imgAcountBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +27,7 @@ public class Account extends AppCompatActivity {
         });
         btnDoiLuu = findViewById(R.id.btnDoiLuu);
         btnDoiHuy = findViewById(R.id.btnDoiHuy);
-        imgBack = findViewById(R.id.imgBack);
+        imgAcountBack = findViewById(R.id.imgAcountBack);
 
         btnDoiLuu.setOnClickListener(v -> {
             finish();
@@ -35,7 +35,7 @@ public class Account extends AppCompatActivity {
         btnDoiHuy.setOnClickListener(v -> {
             finish();
         });
-        imgBack.setOnClickListener(v -> {
+        imgAcountBack.setOnClickListener(v -> {
             finish();
         });
     }
